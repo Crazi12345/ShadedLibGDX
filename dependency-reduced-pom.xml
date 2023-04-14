@@ -60,7 +60,7 @@
                                         requires java.desktop;
                                         requires jdk.unsupported;
                                         exports com.badlogic.gdx;
-                                        exports com.badlogic.gdx.scene2d.ui;
+                                        exports com.badlogic.gdx.scenes.scene2d.ui;
                                         exports com.badlogic.gdx.graphics;
                                         exports com.badlogic.gdx.backends.lwjgl3;
                                         exports com.badlogic.gdx.graphics.glutils;
