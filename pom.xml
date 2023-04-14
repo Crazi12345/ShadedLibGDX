@@ -73,6 +73,11 @@
             <classifier>natives-desktop</classifier>
             <version>${libGDX.version}</version>
         </dependency>
+	<dependency>
+    	    <groupId>com.badlogicgames.gdx</groupId>
+    	    <artifactId>gdx-scene2d-ui</artifactId>
+            <version>1.9.12</version>
+	</dependency>
     </dependencies>
     <build>
         <plugins>                                           
@@ -131,7 +136,8 @@
                                         module com.badlogic.gdx {
                                         requires java.desktop;
                                         requires jdk.unsupported;
-                                        exports com.badlogic.gdx;
+					exports com.badlogic.gdx;
+				        exports com.badlogic.gdx.gdx-scene2d-ui	
                                         exports com.badlogic.gdx.graphics;
                                         exports com.badlogic.gdx.backends.lwjgl3;
                                         exports com.badlogic.gdx.graphics.glutils;
