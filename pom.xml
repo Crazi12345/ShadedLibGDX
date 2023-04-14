@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>dk.sdu.mmmi.cbse</groupId>
+    <groupId>dk.sdu.se.f23</groupId>
     <artifactId>shadedlibgdx</artifactId>
     <version>1.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -21,8 +21,8 @@
     <distributionManagement>
         <repository>
             <id>github</id>
-            <name>GitHub sweat-tek Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/sweat-tek/ShadedLibGDX</url>
+            <name>GitHub Crazi12345 Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/Crazi12345/ShadedLibGDX</url>
         </repository>
     </distributionManagement>
 
@@ -73,19 +73,15 @@
             <classifier>natives-desktop</classifier>
             <version>${libGDX.version}</version>
         </dependency>
-	<dependency>
-    	    <groupId>com.badlogicgames.gdx</groupId>
-    	    <artifactId>gdx-scene2d-ui</artifactId>
-            <version>1.9.12</version>
-	</dependency>
+
     </dependencies>
     <build>
-        <plugins>                                           
+        <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
                 <version>3.4.1</version>
-                <configuration>                
+                <configuration>
                     <relocations>
                         <relocation>
                             <pattern>com.badlogic.gdx.utils</pattern>
@@ -136,8 +132,8 @@
                                         module com.badlogic.gdx {
                                         requires java.desktop;
                                         requires jdk.unsupported;
-					exports com.badlogic.gdx;
-				        exports com.badlogic.gdx.gdx-scene2d-ui	
+                                        exports com.badlogic.gdx;
+                                        exports com.badlogic.gdx.scene2d.ui;
                                         exports com.badlogic.gdx.graphics;
                                         exports com.badlogic.gdx.backends.lwjgl3;
                                         exports com.badlogic.gdx.graphics.glutils;

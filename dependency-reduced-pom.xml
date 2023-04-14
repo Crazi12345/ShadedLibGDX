@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>dk.sdu.mmmi.cbse</groupId>
+  <groupId>dk.sdu.se.f23</groupId>
   <artifactId>shadedlibgdx</artifactId>
   <name>shadedlibgdx</name>
   <version>1.0.1-SNAPSHOT</version>
@@ -60,6 +60,7 @@
                                         requires java.desktop;
                                         requires jdk.unsupported;
                                         exports com.badlogic.gdx;
+                                        exports com.badlogic.gdx.scene2d.ui;
                                         exports com.badlogic.gdx.graphics;
                                         exports com.badlogic.gdx.backends.lwjgl3;
                                         exports com.badlogic.gdx.graphics.glutils;
@@ -81,8 +82,8 @@
   <distributionManagement>
     <repository>
       <id>github</id>
-      <name>GitHub sweat-tek Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/sweat-tek/ShadedLibGDX</url>
+      <name>GitHub Crazi12345 Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/Crazi12345/ShadedLibGDX</url>
     </repository>
   </distributionManagement>
   <properties>
